@@ -4,9 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div>
+    <header>
+        <nav>
+          <h1>Portfolio</h1>
+          <a href="#home">Home</a>
+          <a href="#about">About me</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+    <main>
       <section id="home">
         <h1>Hi, I'm Ramani</h1>
         <p>
@@ -23,16 +34,55 @@
           programming skills. I enjoy exploring modern technologies and building
           projects that help me apply what I learn.
         </p>
-        <h3>Education</h3>
+        </section>
+        <section id="education">
+        <h2>Education</h2>
         <p>I am currently pursuing an M.Sc. in Computer Science.</p>
-        <h3>My Interests</h3>
+        <h2>My Interests</h2>
         <p>
           I am interested in web development, software development, and learning
           modern technologies.
         </p>
-        <h3>My Skills</h3>
-        <p>HTML, CSS, JavaScript, Python, and Bootstrap.</p>
-      </section>
-    </div>
+        </section>
+        <section id="skills">
+          <h2>My Skills</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+          </ul>
+        </section>
+        <section id="contact">
+          <h2 style="text-align: center;">Contact</h2>
+          <form action="#contact">
+            <table cellpadding="10" align="center">
+            <tbody>
+            <tr>
+              <td><label for="name">Name</label></td>
+              <td><input type="text"><br></td>
+            </tr>
+            <tr>
+              <td><label for="email">Email</label></td>
+              <td><input type="email"><br></td>
+            </tr>
+            <tr>
+              <td><label for="message">Message</label></td>
+              <td><textarea name="message" id="message" style="width:170px;"></textarea></td>
+            </tr>
+             <tr>
+              <td> </td>
+              <td><button>Submit</button></td>
+            </tr>
+            </tbody>
+            </table>
+          </form>
+        </section>
+    </main>
+    <footer>
+      <p>&copy; 2026 Ramani. All Rights reserved.</p>
+      <a href="https://github.com/Ramani-mathi" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/ramani-m-8b2692340?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn</a>
+    </footer>
   </body>
 </html>
