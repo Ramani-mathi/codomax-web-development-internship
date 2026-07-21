@@ -39,6 +39,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 7px;
 }
 
 button{
@@ -73,3 +74,17 @@ textarea{
     padding: 5px;
 }
 
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.sub-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.skills div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
