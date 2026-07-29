@@ -38,6 +38,7 @@ section{
     padding: 10px;
     margin-top: 20px;
     border-radius: 5px;
+    transition: 0.3s ease;
 }
 a{
     color: white;
@@ -76,6 +77,11 @@ button{
 
 button:hover{
     transform:scale(1.07);
+    box-shadow: 0 5px 15px rgba(37,99,235,0.5);
+}
+
+section:hover{
+    box-shadow: 0 5px 15px rgba(37,99,235,0.5);
 }
 
 .btn-container{
@@ -97,7 +103,6 @@ button:hover{
     text-align: center;
     align-content: center;
 }
-
 .icons{
     display: flex;
     justify-content: center;
@@ -127,7 +132,7 @@ button:hover{
 #social{
     position: relative;
     top:10px;
-    right:5px;
+    right:5px; 
 }
 
 #phone{
@@ -208,6 +213,7 @@ textarea{
 
 .projects div:hover{
     transform: translateY(-8px);
+    box-shadow: 0 5px 15px rgba(37,99,235,0.5);
 }
 
 
@@ -233,6 +239,41 @@ textarea{
     #home{
         animation: homeEntrance 1s ease;
     }
+
+    #about{
+        animation: homeEntrance 1.2s ease;
+    }
+
+    #skills{
+        animation: homeEntrance 1.4s ease;
+    }
+
+    #projects{
+        animation: homeEntrance 1.6s ease;
+    }
+
+    
+    #education{
+        animation: homeEntrance 1.6s ease;
+    }
+
+    
+    #proj{
+        animation: homeEntrance 1.6s ease;
+    }
+
+    input:focus,
+    textarea:focus{
+        outline:2px solid #2563EB;
+    }
+
+    #successMessage{
+        display: none;
+        color: lightgreen;
+        font-size: 20px;
+        margin-top: 15px;
+        font-weight:bold;
+    }
 @media(max-width: 600px){
     body p{
         font-size: 20px;
@@ -253,6 +294,7 @@ textarea{
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
+        flex-wrap: wrap;
     }
     .sub-container{
         display: grid;
@@ -264,7 +306,7 @@ textarea{
 
 
     button{
-        height: 50px;
+        height: 60px;
         width: fit-content;
     }
     

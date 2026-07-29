@@ -1,5 +1,6 @@
 let viewWorkBtn = document.getElementById("viewWorkBtn");
 let introText = document.getElementById("introText");
+let successMessage = document.getElementById("successMessage");
 
 viewWorkBtn.addEventListener("click",function(){
     introText.textContent = "Thanks for visiting my Portfolio";
@@ -7,7 +8,6 @@ viewWorkBtn.addEventListener("click",function(){
 
 
 let topBtn = document.getElementById("topBtn");
-
 window.addEventListener("scroll",
     function() {
         if(window.scrollY > 300){
@@ -51,7 +51,16 @@ contactForm.addEventListener("submit", function(event) {
         return;
     }
 
-    alert("Form submitted successfully!");
+    if(!email.includes("@")){
+        alert("Please enter a valid email")
+    }
+
+    successMessage.textContent = "✔️Form submitted successfullly!";
+    successMessage.style.display = "block";
+
+    setTimeout(function(){
+        successMessage.style.display = "none";
+    },3000);
 
     contactForm.reset();
 });
