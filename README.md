@@ -18,10 +18,10 @@ A responsive personal portfolio website built during the Codomax Digital Solutio
 - JavaScript
 
 ## Live Website
-(Paste your GitHub Pages link)
+https://ramani-mathi.github.io/codomax-web-development-internship/
 
 ## GitHub Repository
-(Paste your repository link)
+https://github.com/Ramani-mathi/codomax-web-development-internship.git
 
 ## Author
 Ramani
